@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Circle-icons-calculator.svg/1200px-Circle-icons-calculator.svg.png"
+      type="image/icon type"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <br />
+    <input
+      class="nomer"
+      type="number"
+      id="numOne"
+      placeholder="write first number"
+    />
+
+    <select id="action" onchange="hisobla()">
+      <option>+</option>
+      <option>-</option>
+      <option>*</option>
+      <option>/</option>
+      <option>%</option>
+    </select>
+
+    <input
+      class="nomer"
+      type="number"
+      id="numTwo"
+      placeholder="write second number"
+    />
+    = <input type="text" readonly id="result" />
+    <br />
+    <br />
+    <input id="button1" type="button" value="Show result" onclick="hisobla()" />
+    <script src="./script.js"></script>
+  </body>
+</html>
